@@ -1,0 +1,7 @@
+#errorBreed,
+#errorFeed,
+#errorSex,
+#errorNickname {
+  color: red;
+  display: none;
+}
