@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.calc {
+  width: 30%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #e7e1e1;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  border: 2px solid;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid;
+}
+
+.calc h2 {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+.btn {
+  width: 40px;
+  margin: 30px 0;
+  padding: 10px;
+  border: none;
+  background-color: #9526a9;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+#result {
+  min-width: 50%;
+  min-width: 50%;
+  border: 1px solid;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.resultError {
+  color: red;
+}
+
+.calc input {
+  height: 30px;
+  width: 200px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: none;
+  background-color: #eeeeef;
+}
+
+#reset,
+#equall {
+  width: 40%;
+}
+
+button:hover {
+  color: #4d1058;
+}
+button:active {
+  background: rgb(90, 44, 197);
+  box-shadow: 0 3px rgb(38, 4, 65) inset;
+}

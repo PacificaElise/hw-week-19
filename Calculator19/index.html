@@ -4,10 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Калькулятор</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <div class="calc">
+      <h2>Калькулятор</h2>
+      <label for="a"><input type="text" id="a" /></label>
+      <div class="btns">
+        <button class="btn" id="plus" onclick="ev='+'">+</button>
+        <button class="btn" id="minus" onclick="ev='-'">-</button>
+        <button class="btn" id="mult" onclick="ev='*'">*</button>
+        <button class="btn" id="divide" onclick="ev='/'">/</button>
+      </div>
+      <label for="b"><input type="text" id="b" /></label>
+      <button class="btn" id="equall">=</button>
+      <div id="result"></div>
+      <button class="btn" type="reset" id="reset">Очистить</button>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

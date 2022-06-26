@@ -3,12 +3,12 @@ class Worker {
     constructor(name, surname, rate, days) {
       this.name = name;
       this.surname = surname;
-      this.rate = rate;
-      this.days = days;
+      this.rate = Number(rate);
+      this.days = Number(days);
     }
   
     getSalary() {
-      return +this.rate*+this.days;
+      return this.rate*this.days;
     }}
   
     let worker = new Worker('Иван', 'Иванов', 10, 31);
@@ -105,4 +105,5 @@ document.getElementById('submit').addEventListener ('click', function() {
 
 
 
-
+/*Функции из onclick из задания с анкетой питомца, лучше поместить в addEventListener срабатывающий на submit формы - document.getElementById('submit').addEventListener
+Массив params из анкеты питомца было бы грамотнее заменить на объект, в котором будут заданы свойства name, feed, breed и sex позже в создании экземпляра класса можно будет не использовать индексы массива что бы вытаскивать значения, а обращаться к знамению в объекте через ключ - let myCat = new Cat(params.name, params.breed, params.feed, params.sex);*/
